@@ -8,7 +8,7 @@
 ## Cron Jobs
   1. Sign into instance as root
   2. Enter the command crontab -e
-  3. Then enter 30 0-23 1-31 * * /root/Master.sh
+  3. Then enter 30 0-23 1-31 * * /path/to/Master.sh
 
 ### Submit Changes
 Pleas submit any recommended changes through Github

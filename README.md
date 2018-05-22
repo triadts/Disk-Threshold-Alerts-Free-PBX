@@ -1,4 +1,4 @@
-# Disk-Threshold-Alerts-Free-PBX
+# Disk-Threshold-Alerts-Free-PBX & Auto Truncate
 ## Steps
   1. After logging into the instance as root download your "Master" git clone https://github.com/triadts/Disk-Threshold-Alerts-Free-PBX.git
   2. Change the "from" name to be the company intials and with PBX at the end. ex: TTSPBX
@@ -9,7 +9,7 @@
   1. Sign into instance as root
   2. Enter the command crontab -e
   3. Then enter 30 0-23 1-31 * * /path/to/Master.sh it should look something like this: 
-  30 0-23 1-31 * * /home/{username}/Disk-Threshold-Alerts-Free-PBX/Master.sh
-
+  - 30 0-23 1-31 * * /home/{username}/Disk-Threshold-Alerts-Free-PBX/Master.sh
+  - 30 0-23 1-31 * * /home/{username}/Disk-Threshold-Alerts-Free-PBX/truncate.sh
 ### Submit Changes
 Pleas submit any recommended changes through Github

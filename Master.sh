@@ -1,5 +1,5 @@
 CURRENT=$(df / | grep / | awk '{ print $5}' | sed 's/%//g')
-THRESHOLD=80
+THRESHOLD=85
 
 if [ "$CURRENT" >= -gt "$THRESHOLD" ] ; then
     mail -r <companynamePBX> -s 'Disk Space Alert' recipient@domain.com << EOF

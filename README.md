@@ -5,8 +5,8 @@
   3. Make sure the email spam filter includes your domain name ex. TTSPBX@ip-xxx-xxx-xxx-xxx.ec2.internal you can get your host name by typing hostname as a command
   4. White list the this email in Zendesk
   5. Make both files executable:
-    - chmod 700 Master.sh
-    - chmod 700 filetruncate.sh
+    - chmod 700 Master.sh filetruncate.sh
+ 
 
 ## Cron Jobs
   1. Sign into instance as root

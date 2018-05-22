@@ -10,6 +10,6 @@
   2. Enter the command crontab -e
   3. Then enter 30 0-23 1-31 * * /path/to/Master.sh it should look something like this: 
   - 30 0-23 1-31 * * /home/{username}/Disk-Threshold-Alerts-Free-PBX/Master.sh
-  - 30 0-23 1-31 * * /home/{username}/Disk-Threshold-Alerts-Free-PBX/truncate.sh
+  - 30 0-23 1-31 * * /home/{username}/Disk-Threshold-Alerts-Free-PBX/filetruncate.sh
 ### Submit Changes
 Pleas submit any recommended changes through Github

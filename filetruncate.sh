@@ -4,8 +4,10 @@
 
 #this will identify all files
 CURRENT=$(df / | grep / | awk '{ print $5}' | sed 's%//g')
-THRESHOLD=80
+#THRESHOLD=70
 
-if [ "$CURRENT" >= -gt "$THRESHOLD"] ; then
-#this should only erase log files that have reached the threshold 
+if [ "$CURRENT" > 80 ] | [ "$CURRENT"  = 80 ] ; then
+#this should only erase log files that have reached the threshold
 truncate -s 0 /var/log/asterisk/*
+fi
+

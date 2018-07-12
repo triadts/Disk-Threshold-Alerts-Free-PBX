@@ -8,8 +8,7 @@ CURRENT=$(df / | grep / | awk '{ print $5}' | sed 's/%//g')
 #THRESHOLD=70
 
 if [ "$CURRENT" > 80 ] | [ "$CURRENT"  = 80 ] ; then
-#do TRUNCATE
-#this should only erase log files that have reached the threshold
+#this erases all logfiles in the asterisk log directory
     alias proj="truncate -s 0 /var/log/asterisk/*"
 fi
 
